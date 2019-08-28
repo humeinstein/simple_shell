@@ -9,7 +9,7 @@
 int exit_hsh(char **cmd)
 {
 	if (*cmd)
-		exit(1);
+		exit(0);
 	return (0);
 }
 
