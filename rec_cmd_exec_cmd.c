@@ -17,8 +17,9 @@ char *get_line(void)
 
 	if (prompt == EOF)
 	{
-		write(1, "\n", 1);
-		_exit(1);
+		if(isatty(STDIN_FILENO))
+			write(STDIN_FILENO, "\n", 1);
+		_exit(0);
 	}
 	return (buff);
 }

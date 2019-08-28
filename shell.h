@@ -1,7 +1,7 @@
 #ifndef SHELL_H_
 #define SHELL_H_
 
-#define DELIM "\n\a\t"
+#define DELIM " \n\a\t"
 
 #include <stdlib.h>
 #include <stdio.h>
