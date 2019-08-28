@@ -28,11 +28,13 @@ void shell_init(char **env)
 		call_built(cmbn, cmd);
 		if (!cmbn)
 			perror(cmbn);
+
 	}
 	free(line);
 	free(cmd);
 	free(dir);
 	free(cmbn);
+
 }
 
 /**

@@ -67,7 +67,7 @@ char *_strdup(char *str)
 	{
 	}
 	x++;
-	newstr = malloc(sizeof(char) * x);
+	newstr = malloc(sizeof(char) * (x + 1));
 
 	if (newstr == NULL)
 		return (NULL);
