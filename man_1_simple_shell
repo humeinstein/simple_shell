@@ -1,0 +1,49 @@
+.TH "HSH" 1 "28 August 2019"
+.SH NAME
+hsh - Simple Shell
+.SH SYNOPSIS
+.BR "hsh "[file]
+.SH DESCRIPTION
+.PP
+hsh is an sh-compatible language interpreter that executes commands read from standard input.
+hsh is intended to be an exact copy of Simple Shell with improvements regarding memory.
+.SH ARGUMENTS
+.PP
+The first argument is the name of the file that should contain shell commands. hsh reads commands from the file and exits.
+.SH COMMANDS
+.PP
+A line is read and if the first word of the line is not a reserved word, then the shell has recognized a simple command.
+Otherwise a complex command has been recognized.
+.SH SIMPLE COMMANDS
+.PP
+A simple command is one that is found in the environmental list.
+.SH BUILTIN COMMANDS
+.pp
+cd              changes the current working directory to a given directory as an argument. If "cd -" is executed then go to previous directory. If cd is executed alone then go to home directory.
+.PP
+env             prints the environment from the environmental list.
+.PP
+Complex commands are a combination of control operators and simple commands.
+    example: "ls ; ls"
+.SH EXIT STATUS
+.PP
+Errors that are detected by the shell, such as a syntax error, will cause the shell to exit with a non-zero exit status. Otherwise the shell will return the exit status of the last command executed.
+.SH ENVIRONMENT
+.PP
+HOME       Set automatically by login(1) from the user's login directory in the password file (passwd(4)).  This environment variable also functions as the defaul
+          argument for the cd builtin.
+.PP
+PATH       The default path for executables.
+.PP
+CDPATH     The search path used with the cd builtin.
+.PP
+PWD        Prints the current working directory.
+.PP
+OLDPWD     Users previous working directory.
+.SH BUGS
+.PP
+There exist memory leaks.
+.SH AUTHORS
+Andrew Graf <826@holbertonschool.com>
+
+Faizan Khan <711@holbertonschool.com>
