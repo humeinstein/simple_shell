@@ -105,10 +105,10 @@ shell.h | Contains function prototypes.
 
 ## Authors
 
-*Faizan Khan* :boom: [Github]([https://github.com/b1naryp0et/](https://github.com/b1naryp0et/)) || [Twitter]([https://twitter.com/b1nary_p0et](https://twitter.com/b1nary_p0et)) || [LinkedIn]([https://www.linkedin.com/in/fkkhan/](https://www.linkedin.com/in/fkkhan/))  
+*Faizan Khan* :boom:
 
 
-  *Andrew Graf*  :cookie:[Github]([https://github.com/humeinstein](https://github.com/humeinstein)) || [Twitter]([https://twitter.com/realAndrewGraf(https://twitter.com/realAndrewGraf)) || [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/))  
+  *Andrew Graf*  :cookie:
 
 ## FUNCTIONS
 
